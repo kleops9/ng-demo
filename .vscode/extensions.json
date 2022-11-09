@@ -9,6 +9,7 @@
     "cyrilletuzi.angular-schematics",
     "eamodio.gitlens",
     "yessz.git-cz-emoji-vsc",
-    "formulahendry.auto-rename-tag"
+    "formulahendry.auto-rename-tag",
+    "eamodio.gitlens"
   ]
 }

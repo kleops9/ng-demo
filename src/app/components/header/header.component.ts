@@ -32,4 +32,36 @@ export class HeaderComponent implements OnInit {
       })
       .unsubscribe();
   }
+
+  /**
+   * This function is not typed
+   * @param param1
+   * @param param2
+   * @returns
+   */
+  private nonTypedFunction(param1: any, param2: any): any {
+    const param = param1.toString() + param2.toString();
+    return param.split("@");
+  }
+
+  /**
+   * This function is typed
+   * @param param1 string
+   * @param param2 string
+   * @returns string[]
+   */
+  private typedFunction(param1: string, param2: string): string[] {
+    const param = param1.toString() + param2.toString();
+    return param.split("@");
+  }
+
+  /**
+   * This function is typed
+   */
+  private testTypedFunction(): void {
+    let a = "a";
+
+    // const result1 = this.typedFunction('test', 'test');
+    // const result2 = this.nonTypedFunction("test", "test");
+  }
 }
