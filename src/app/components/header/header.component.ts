@@ -59,7 +59,7 @@ export class HeaderComponent implements OnInit {
    * This function is typed
    */
   private testTypedFunction(): void {
-    let a = "a";
+    const a = "a";
 
     // const result1 = this.typedFunction('test', 'test');
     // const result2 = this.nonTypedFunction("test", "test");
