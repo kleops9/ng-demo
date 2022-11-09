@@ -1,0 +1,12 @@
+<div
+  class="notification"
+  [style]="{
+    animation:
+      'fadeInFromRight 0.5s cubic-bezier(0.2, 0.76, 0.57, 0.99) 1s both, fadeOut 0.5s ease ' +
+      (notification?.duration || 5000) / 1000 +
+      's forwards',
+    color: notification?.type === 'success' ? 'black' : 'red'
+  }"
+>
+  {{ notification?.message ? notification?.message : "Some error" }}
+</div>

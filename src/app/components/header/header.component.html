@@ -1,0 +1,8 @@
+<h3>{{ title }}</h3>
+<button
+  mat-raised-button
+  (click)="sendNotificationException()"
+  [disabled]="notificationActive$ | async"
+>
+  Search Exception
+</button>
